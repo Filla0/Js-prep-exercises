@@ -5,6 +5,16 @@ const trafficLight = {
   let cycle = 0;
   while (cycle < 2) {
     const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
+
+    trafficLight.possibleStates.forEach(element =>{
+      console.log("The traffic light is on", element);
+    })
+    cycle++;
+
+    /** for (const color of trafficLight.possibleStates){
+      console.log("The traffic light is on", color);
+    }
+    cycle++;
     console.log("The traffic light is on", currentState);
     if (currentState){
       trafficLight.stateIndex++;
@@ -13,6 +23,7 @@ const trafficLight = {
       trafficLight.stateIndex=0;
       cycle++;
     }
+    */
   
   }
 /** 
